@@ -94,6 +94,9 @@ devDependencies:
   '@uni-helper/uni-app-types':
     specifier: ^0.5.9
     version: 0.5.9(typescript@5.2.2)
+  '@uni-helper/uni-cloud-types':
+    specifier: ^0.5.2
+    version: 0.5.2(@uni-helper/uni-app-types@0.5.9)
   '@uni-helper/uni-ui-types':
     specifier: ^0.5.11
     version: 0.5.11(@uni-helper/uni-app-types@0.5.9)
@@ -3440,6 +3443,20 @@ packages:
     dependencies:
       '@dcloudio/types': 3.3.3
       typescript: 5.2.2
+      vue3: /vue@3.3.4
+    dev: true
+
+  /@uni-helper/uni-cloud-types@0.5.2(@uni-helper/uni-app-types@0.5.9):
+    resolution: {integrity: sha512-DnzYI4CYzBxSqDqjT9RK/lFK19igKTrqAKeXSGd2lgaE1bC+gg2DvBSNWtjGbZw24oReNeXxaQVx6f5iOjxw/Q==}
+    engines: {node: '>=14.18'}
+    peerDependencies:
+      '@uni-helper/uni-app-types': ^0.5.1
+    peerDependenciesMeta:
+      '@uni-helper/uni-app-types':
+        optional: true
+    dependencies:
+      '@dcloudio/types': 3.3.3
+      '@uni-helper/uni-app-types': 0.5.9(typescript@5.2.2)
       vue3: /vue@3.3.4
     dev: true
 
