@@ -1,6 +1,7 @@
 {
   // 在保存时格式化文件
   "editor.formatOnSave": true,
+  "scss.lint.unknownAtRules": "ignore",
   // 文件格式化配置
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

@@ -1,9 +1,9 @@
 {
-  "name": "uni-app-xiaotuxian",
-  "version": "0.0.0",
+  "name": "uni-app-template",
+  "version": "0.0.1",
   "author": {
-    "name": "itheima",
-    "url": "https://web.itheima.com/"
+    "name": "yldm",
+    "url": "https://yldm.tech"
   },
   "scripts": {
     "dev:app": "uni -p app",
@@ -77,19 +77,26 @@
     "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3081220230802001",
     "@rushstack/eslint-patch": "^1.1.4",
     "@types/node": "^18.11.9",
+    "@types/postcss-import": "^14.0.0",
     "@uni-helper/uni-app-types": "^0.5.8",
     "@uni-helper/uni-ui-types": "^0.5.11",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
     "@vue/runtime-core": "^3.2.45",
     "@vue/tsconfig": "^0.4.0",
+    "autoprefixer": "^10.4.15",
+    "css-byebye": "^4.0.1",
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "miniprogram-api-typings": "^3.12.0",
+    "postcss": "^8.4.29",
+    "postcss-class-rename": "^1.0.1",
+    "postcss-import": "^15.1.0",
     "prettier": "^2.7.1",
     "sass": "^1.56.1",
+    "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6",
     "vite": "^4.4.9",
     "vue-tsc": "^1.8.8"
