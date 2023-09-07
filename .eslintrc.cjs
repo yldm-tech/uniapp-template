@@ -32,12 +32,6 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
-    'at-rule-no-unknown': [
-      true,
-      {
-        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen'],
-      },
-    ],
     'prettier/prettier': [
       'warn',
       {

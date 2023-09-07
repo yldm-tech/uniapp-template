@@ -2,7 +2,7 @@ import { uniPostcssPlugin } from '@dcloudio/uni-cli-shared'
 import postcssImport from 'postcss-import'
 import tailwindcss from 'tailwindcss'
 import postcssClassRename from 'postcss-class-rename'
-import cssByebye from 'css-byebye'
+// import cssByebye from 'css-byebye'
 import autoprefixer from 'autoprefixer'
 import path from 'path'
 
@@ -20,7 +20,7 @@ export default {
           return path.resolve(uniInputDir, id.substring(1))
         }
         return id
-      }
+      },
     }),
     tailwindcss(),
     // 根据平台差异进行不同的样式处理
@@ -31,18 +31,17 @@ export default {
             '\\\\:': '--',
             '\\\\/': '--',
             '\\\\.': '--',
-            // '.:': '--',
-            '\\*': '--'
+            '\\*': '--',
           }),
-          cssByebye({
-            rulesToRemove: [/\*/],
-            map: false
-          })
+          // cssByebye({
+          //   rulesToRemove: [/\*/],
+          //   map: false,
+          // }),
         ]
       : []),
     uniPostcssPlugin(),
     autoprefixer({
-      remove: true
-    })
-  ]
+      remove: true,
+    }),
+  ],
 }

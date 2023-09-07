@@ -50,7 +50,7 @@ npm run dev:mp-weixin
 npm run dev:h5
 
 # App端
-需 HbuilderX 工具，运行 - 运行到手机或模拟器
+需 HbuilderX 工具,运行 - 运行到手机或模拟器
 ```
 
 3. 微信开发者工具导入 `/dist/dev/mp-weixin` 目录

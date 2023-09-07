@@ -6,3 +6,17 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+
+/**
+ * declare module '@vue/runtime-core'
+ *   现调整为
+ * declare module 'vue'
+ */
+import 'vue'
+declare module 'vue' {
+  export interface GlobalComponents {
+    //
+  }
+}
+
+declare module 'postcss-class-rename'
