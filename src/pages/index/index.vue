@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <view class="index bg-blue-300 text-3xl uppercase">index</view>
+  <view class="index bg-[#302452] w-[20%] text-3xl uppercase">index</view>
   <uni-card
     title="基础卡片"
     sub-title="副标题"

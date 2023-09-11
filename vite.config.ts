@@ -1,15 +1,31 @@
 import { defineConfig } from 'vite'
+import nested from 'tailwindcss/nesting'
+import tailwindcss from 'tailwindcss'
+import tailwindcssConfig from './tailwind.config' // 注意匹配实际文件
+import postcssPresetEnv from 'postcss-preset-env'
 import uni from '@dcloudio/vite-plugin-uni'
-import postcss from './postcss.config'
+import uniTailwind from '@uni-helper/vite-plugin-uni-tailwind'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  build: {
-    // 开发阶段启用源码映射：https://uniapp.dcloud.net.cn/tutorial/migration-to-vue3.html#需主动开启-sourcemap
-    sourcemap: process.env.NODE_ENV === 'development',
-  },
-  plugins: [uni()],
   css: {
-    postcss,
+    postcss: {
+      plugins: [
+        nested(),
+        tailwindcss({
+          config: tailwindcssConfig,
+        }),
+        postcssPresetEnv({
+          stage: 3,
+          features: { 'nesting-rules': false },
+        }),
+      ],
+    },
   },
+  plugins: [
+    uni(),
+    uniTailwind({
+      /* options */
+    }),
+  ],
 })
