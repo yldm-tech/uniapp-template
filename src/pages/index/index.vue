@@ -1,6 +1,5 @@
 <template>
-  <view>
-    <todo-header />
+  <view class="mt-12">
     <todo-tasks />
     <todo-ongoing />
   </view>

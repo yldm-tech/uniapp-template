@@ -29,9 +29,11 @@
       }
     },
     {
-      "path": "pages/category/category",
+      "path": "pages/today/today",
       "style": {
-        "navigationBarTitleText": "分类"
+        "backgroundTextStyle": "light",
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "今日"
       }
     },
     {
@@ -61,8 +63,8 @@
         "selectedIconPath": "static/tabs/home_selected.png"
       },
       {
-        "text": "分类",
-        "pagePath": "pages/category/category",
+        "text": "今天",
+        "pagePath": "pages/today/today",
         "iconPath": "static/tabs/category_default.png",
         "selectedIconPath": "static/tabs/category_selected.png"
       },

@@ -1,5 +1,5 @@
 <template>
-  <view class="container flex justify-between px-5 py-5">
+  <view class="todo-container flex justify-between px-5 py-5">
     <view class="left">
       <image class="w-10 h-10 inline-block" src="/static/images/menu.png" mode="scaleToFill" />
       <text class="ml-6 text-gray-500">June 03,2023</text>
@@ -11,14 +11,13 @@
 </template>
 
 <style lang="scss" scoped>
-.container {
+.todo-container {
   /* #ifdef APP-PLUS */
   padding-top: var(--status-bar-height);
   height: calc(100% - var(--status-bar-height));
   /* #endif */
-  /* #ifdef MP-WEIXIN || MP */
+  /* #ifdef MP-WEIXIN */
   padding-top: calc(var(--status-bar-height) + 40rpx);
   /* #endif */
-  min-height: 100%;
 }
 </style>
