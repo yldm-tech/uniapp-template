@@ -2,7 +2,7 @@
   <view class="container flex justify-between px-5 py-5">
     <view class="left">
       <image class="w-10 h-10 inline-block" src="/static/images/menu.png" mode="scaleToFill" />
-      <text class="ml-6">June 03,2023</text>
+      <text class="ml-6 text-gray-500">June 03,2023</text>
     </view>
     <view class="right">
       <image class="h-10 w-10" src="/static/images/avatar.png" mode="scaleToFill" />
