@@ -1,11 +1,11 @@
 <template>
   <view>
-    <text class="text-xl font-bold mx-3 mb-2 block">My Tasks</text>
-    <view class="grid grid-rows-7 grid-flow-col gap-1 h-[420px]">
+    <text class="text-xl font-bold mx-5 mb-2 block">My Tasks</text>
+    <view class="grid grid-rows-7 grid-flow-col gap-1 h-[420px] mx-3">
       <view
         v-for="item in items"
         :key="item.id"
-        class="bg-cover bg-center bg-no-repeat rounded-3xl mr-1 my-1 ml-2 shadow-lg"
+        class="bg-cover bg-center bg-no-repeat rounded-3xl my-1 mx-1 shadow-lg"
         :class="item.class"
       >
         <view class="flex justify-between">
@@ -14,7 +14,10 @@
             <view class="text-white text-bold my-3">{{ item.content }}</view>
             <view class="text-white text-xs my-3">{{ item.count }} tasks</view>
           </view>
-          <view class="px-2 py-3">
+          <view
+            class="px-2 py-3 flex"
+            :class="{ 'items-end': item.id % 2 == 0, 'pb-10': item.id == 2 }"
+          >
             <image class="w-5 h-5" src="/static/images/arrow.png" mode="scaleToFill" />
           </view>
         </view>
