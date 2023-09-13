@@ -9,14 +9,24 @@
         :class="item.class"
       >
         <view class="flex justify-between">
-          <view class="py-5 pl-4">
+          <view class="py-3 pl-4 mx-2">
             <image class="w-[60px]" :src="item.contentImage" mode="widthFix" />
             <view class="text-white text-bold my-3">{{ item.content }}</view>
-            <view class="text-white text-xs my-3">{{ item.count }} tasks</view>
+            <view
+              :class="{
+                'pt-4': item.id == 4,
+              }"
+              class="text-white text-xs my-3"
+              >{{ item.count }} tasks</view
+            >
           </view>
           <view
             class="px-2 py-3 flex"
-            :class="{ 'items-end': item.id % 2 == 0, 'pb-10': item.id == 2 }"
+            :class="{
+              'items-end': item.id % 2 == 0,
+              'pb-10': item.id == 2,
+              'pb-6': item.id == 4,
+            }"
           >
             <image class="w-5 h-5" src="/static/images/arrow.png" mode="scaleToFill" />
           </view>
