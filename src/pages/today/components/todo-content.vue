@@ -1,10 +1,10 @@
 <template>
-  <view class="flex justify-between border-b-1 py-2" v-for="item in contents" :key="item.id">
+  <view class="flex justify-between border-b-1 py-2 px-2" v-for="item in contents" :key="item.id">
     <text class="mx-5 text-md">9 AM</text>
     <view
       class="flex-1 my-1 rounded-4 px-6 py-2 shadow-lg shadow-cyan-200 bg-gradient-to-r from-cyan-400 to-cyan-500"
     >
-      <text class="block text-white text-sm">{{ item.title }}</text>
+      <text class="text-white text-sm">{{ item.title }}</text>
       <text class="block text-white text-xs">{{ item.duration }}</text>
     </view>
   </view>

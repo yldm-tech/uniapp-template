@@ -18,7 +18,7 @@ const activeIndex = ref(0)
   <view class="flex justify-between mt-12">
     <view class="mx-5">
       <text class="block text-2xl font-bold">June,03</text>
-      <text class="block text-sm text-gray-500">16 tasks Today</text>
+      <text class="block text-sm text-gray-500 mt-2">16 tasks Today</text>
     </view>
     <view>
       <image class="w-[80px]" src="/static/images/cal_button.png" mode="widthFix" />
