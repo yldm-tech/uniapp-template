@@ -4,6 +4,7 @@
 		"custom": {
 			// uni-ui 规则如下配置
 			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+      "fui-(.*)": "@/components/fui-$1/fui-$1.vue",
 			"^todo-(.*)": "@/components/todo-$1.vue"
 		}
 	},
@@ -23,9 +24,11 @@
 			}
 		},
 		{
-			"path": "pages/cart/cart",
+			"path": "pages/project/project",
 			"style": {
-				"navigationBarTitleText": "购物车"
+        "backgroundTextStyle": "light",
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "项目"
 			}
 		},
 		{
@@ -77,8 +80,8 @@
 				"selectedIconPath": "static/tabs/category_selected.png"
 			},
 			{
-				"text": "购物车",
-				"pagePath": "pages/cart/cart",
+				"text": "项目",
+				"pagePath": "pages/project/project",
 				"iconPath": "static/tabs/cart_default.png",
 				"selectedIconPath": "static/tabs/cart_selected.png"
 			},
