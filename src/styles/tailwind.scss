@@ -9,6 +9,10 @@ scroll-view {
   box-sizing: border-box;
 }
 
+page{
+  overflow-y: hidden;
+}
+
 button::after {
   border: none;
 }

@@ -9,7 +9,7 @@
     @refresherrefresh="onRefresh"
     @refresherrestore="onRestore"
     @refresherabort="onAbort"
-    class="h-[500px]"
+    class="h-[600px]"
   >
     <view
       class="flex justify-between items-center border-b-1 py-2 px-2"
