@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import nested from 'tailwindcss/nesting'
+// import nested from 'tailwindcss/nesting'
 import tailwindcss from 'tailwindcss'
 import tailwindcssConfig from './tailwind.config' // 注意匹配实际文件
 import postcssPresetEnv from 'postcss-preset-env'
@@ -11,7 +11,7 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [
-        nested(),
+        // nested(),
         tailwindcss({
           config: tailwindcssConfig,
         }),
