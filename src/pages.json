@@ -4,7 +4,7 @@
 		"custom": {
 			// uni-ui 规则如下配置
 			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
-      "fui-(.*)": "@/components/fui-$1/fui-$1.vue",
+      "fui-(.*)": "@/components/firstui/fui-$1/fui-$1.vue",
 			"^todo-(.*)": "@/components/todo-$1.vue"
 		}
 	},
