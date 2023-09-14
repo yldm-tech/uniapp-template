@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ProjectCard from './components/project-card.vue'
+import ProjectProgress from './components/project-progress.vue'
 
 const onTap = () => {
   console.log('onTap')
@@ -7,8 +8,9 @@ const onTap = () => {
 </script>
 
 <template>
-  <view class="">
+  <view class="mt-12">
     <project-card />
+    <project-progress />
   </view>
 </template>
 
