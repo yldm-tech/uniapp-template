@@ -30,7 +30,7 @@ const activeIndex = ref(0)
     <view class="flex leading-10 my-3 relative z-10">
       <view
         :class="{ 'text-white bg-orange-400': activeIndex === index }"
-        class="flex flex-col flex-1 justify-between bg-white rounded-12 text-center py-6 text-md shadow-sm mx-2"
+        class="flex flex-col flex-1 justify-between rounded-12 text-center py-6 text-md shadow-sm mx-2"
         @tap="($event: any) => (activeIndex = index)"
         v-for="(item, index) in orderTabs"
         :key="item.title"
