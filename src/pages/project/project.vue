@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ProjectCard from './components/project-card.vue'
+
 const onTap = () => {
   console.log('onTap')
 }
@@ -6,16 +8,7 @@ const onTap = () => {
 
 <template>
   <view class="">
-    <view>
-      <view>
-        <view>Your today's task almost done!</view>
-        <button>View Task</button>
-      </view>
-      <view>
-        <fui-button>hello</fui-button>
-        <fui-circle :percent="75"></fui-circle>
-      </view>
-    </view>
+    <project-card />
   </view>
 </template>
 
