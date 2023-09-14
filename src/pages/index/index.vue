@@ -12,6 +12,8 @@
   >
     <text>这是一个带头像和双标题的基础卡片，此示例展示了一个完整的卡片。</text>
   </uni-card>
+  <fui-button>hello</fui-button>
+  <fui-circle :percent="75"></fui-circle>
 </template>
 
 <style lang="scss">
