@@ -36,5 +36,6 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue"
-  ]
+  ],
+  "exclude": ["src/components/firstui/**/*"]
 }
