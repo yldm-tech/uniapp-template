@@ -1,242 +1,326 @@
 // 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：    1 82 6  7148  206，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
-const isWeex = typeof WXEnvironment !== 'undefined';
-const isWeexIOS = isWeex && /ios/i.test(WXEnvironment.platform);
-const isWeexAndroid = isWeex && !isWeexIOS;
+const isWeex = typeof WXEnvironment !== 'undefined'
+const isWeexIOS = isWeex && /ios/i.test(WXEnvironment.platform)
+const isWeexAndroid = isWeex && !isWeexIOS
 
-import GLmethod from '../context-webgl/GLmethod';
+import GLmethod from '../context-webgl/GLmethod'
 
 const GCanvasModule =
-    (typeof weex !== 'undefined' && weex.requireModule) ? (weex.requireModule('gcanvas')) :
-        (typeof __weex_require__ !== 'undefined') ? (__weex_require__('@weex-module/gcanvas')) : {};
+  typeof weex !== 'undefined' && weex.requireModule
+    ? weex.requireModule('gcanvas')
+    : typeof __weex_require__ !== 'undefined'
+    ? __weex_require__('@weex-module/gcanvas')
+    : {}
 
-let isDebugging = false;
+let isDebugging = false
 
-let isComboDisabled = false;
+let isComboDisabled = false
 
 const logCommand = (function () {
-    const methodQuery = [];
-    Object.keys(GLmethod).forEach(key => {
-        methodQuery[GLmethod[key]] = key;
-    })
-    const queryMethod = (id) => {
-        return methodQuery[parseInt(id)] || 'NotFoundMethod';
-    }
-    const logCommand = (id, cmds) => {
-        const mId = cmds.split(',')[0];
-        const mName = queryMethod(mId);
-        console.log(`=== callNative - componentId:${id}; method: ${mName}; cmds: ${cmds}`);
-    }
-    return logCommand;
-})();
+  const methodQuery = []
+  Object.keys(GLmethod).forEach((key) => {
+    methodQuery[GLmethod[key]] = key
+  })
+  const queryMethod = (id) => {
+    return methodQuery[parseInt(id)] || 'NotFoundMethod'
+  }
+  const logCommand = (id, cmds) => {
+    const mId = cmds.split(',')[0]
+    const mName = queryMethod(mId)
+    console.log(`=== callNative - componentId:${id}; method: ${mName}; cmds: ${cmds}`)
+  }
+  return logCommand
+})()
 
 function joinArray(arr, sep) {
-    let res = '';
-    for (let i = 0; i < arr.length; i++) {
-        if (i !== 0) {
-            res += sep;
-        }
-        res += arr[i];
+  let res = ''
+  for (let i = 0; i < arr.length; i++) {
+    if (i !== 0) {
+      res += sep
     }
-    return res;
+    res += arr[i]
+  }
+  return res
 }
 
 const commandsCache = {}
 
 const GBridge = {
+  callEnable: (ref, configArray) => {
+    commandsCache[ref] = []
 
-    callEnable: (ref, configArray) => {
+    return GCanvasModule.enable({
+      componentId: ref,
+      config: configArray,
+    })
+  },
 
-        commandsCache[ref] = [];
+  callEnableDebug: () => {
+    isDebugging = true
+  },
 
-        return GCanvasModule.enable({
-            componentId: ref,
-            config: configArray
-        });
-    },
+  callEnableDisableCombo: () => {
+    isComboDisabled = true
+  },
 
-    callEnableDebug: () => {
-        isDebugging = true;
-    },
+  callSetContextType: function (componentId, context_type) {
+    GCanvasModule.setContextType(context_type, componentId)
+  },
 
-    callEnableDisableCombo: () => {
-        isComboDisabled = true;
-    },
+  callReset: function (id) {
+    GCanvasModule.resetComponent && canvasModule.resetComponent(componentId)
+  },
 
-    callSetContextType: function (componentId, context_type) {
-        GCanvasModule.setContextType(context_type, componentId);
-    },
-
-    callReset: function(id){
-        GCanvasModule.resetComponent && canvasModule.resetComponent(componentId);
-    },
-
-    render: isWeexIOS ? function (componentId) {
+  render: isWeexIOS
+    ? function (componentId) {
         return GCanvasModule.extendCallNative({
-            contextId: componentId,
-            type: 0x60000001
-        });
-    } : function (componentId) {
-        return callGCanvasLinkNative(componentId, 0x60000001, 'render');
-    },
+          contextId: componentId,
+          type: 0x60000001,
+        })
+      }
+    : function (componentId) {
+        return callGCanvasLinkNative(componentId, 0x60000001, 'render')
+      },
 
-    render2d: isWeexIOS ? function (componentId, commands, callback) {
-
+  render2d: isWeexIOS
+    ? function (componentId, commands, callback) {
         if (isDebugging) {
-            console.log('>>> >>> render2d ===');
-            console.log('>>> commands: ' + commands);
+          console.log('>>> >>> render2d ===')
+          console.log('>>> commands: ' + commands)
         }
 
-        GCanvasModule.render([commands, callback?true:false], componentId, callback);
-
-    } : function (componentId, commands,callback) {
-
+        GCanvasModule.render([commands, callback ? true : false], componentId, callback)
+      }
+    : function (componentId, commands, callback) {
         if (isDebugging) {
-            console.log('>>> >>> render2d ===');
-            console.log('>>> commands: ' + commands);
+          console.log('>>> >>> render2d ===')
+          console.log('>>> commands: ' + commands)
         }
 
-        callGCanvasLinkNative(componentId, 0x20000001, commands);
-		if(callback){
-		callback();
-		}
-    },
+        callGCanvasLinkNative(componentId, 0x20000001, commands)
+        if (callback) {
+          callback()
+        }
+      },
 
-    callExtendCallNative: isWeexIOS ? function (componentId, cmdArgs) {
+  callExtendCallNative: isWeexIOS
+    ? function (componentId, cmdArgs) {
+        throw 'should not be here anymore ' + cmdArgs
+      }
+    : function (componentId, cmdArgs) {
+        throw 'should not be here anymore ' + cmdArgs
+      },
 
-        throw 'should not be here anymore ' + cmdArgs;
-
-    } : function (componentId, cmdArgs) {
-
-        throw 'should not be here anymore ' + cmdArgs;
-
-    },
-
-
-    flushNative: isWeexIOS ? function (componentId) {
-
-        const cmdArgs = joinArray(commandsCache[componentId], ';');
-        commandsCache[componentId] = [];
+  flushNative: isWeexIOS
+    ? function (componentId) {
+        const cmdArgs = joinArray(commandsCache[componentId], ';')
+        commandsCache[componentId] = []
 
         if (isDebugging) {
-            console.log('>>> >>> flush native ===');
-            console.log('>>> commands: ' + cmdArgs);
+          console.log('>>> >>> flush native ===')
+          console.log('>>> commands: ' + cmdArgs)
         }
 
         const result = GCanvasModule.extendCallNative({
-            "contextId": componentId,
-            "type": 0x60000000,
-            "args": cmdArgs
-        });
+          contextId: componentId,
+          type: 0x60000000,
+          args: cmdArgs,
+        })
 
-        const res = result && result.result;
-
-        if (isDebugging) {
-            console.log('>>> result: ' + res);
-        }
-
-        return res;
-
-    } : function (componentId) {
-
-        const cmdArgs = joinArray(commandsCache[componentId], ';');
-        commandsCache[componentId] = [];
+        const res = result && result.result
 
         if (isDebugging) {
-            console.log('>>> >>> flush native ===');
-            console.log('>>> commands: ' + cmdArgs);
+          console.log('>>> result: ' + res)
         }
 
-        const result = callGCanvasLinkNative(componentId, 0x60000000, cmdArgs);
+        return res
+      }
+    : function (componentId) {
+        const cmdArgs = joinArray(commandsCache[componentId], ';')
+        commandsCache[componentId] = []
 
         if (isDebugging) {
-            console.log('>>> result: ' + result);
+          console.log('>>> >>> flush native ===')
+          console.log('>>> commands: ' + cmdArgs)
         }
 
-        return result;
-    },
-
-    callNative: function (componentId, cmdArgs, cache) {
+        const result = callGCanvasLinkNative(componentId, 0x60000000, cmdArgs)
 
         if (isDebugging) {
-            logCommand(componentId, cmdArgs);
+          console.log('>>> result: ' + result)
         }
 
-        commandsCache[componentId].push(cmdArgs);
+        return result
+      },
 
-        if (!cache || isComboDisabled) {
-            return GBridge.flushNative(componentId);
-        } else {
-            return undefined;
-        }
-    },
+  callNative: function (componentId, cmdArgs, cache) {
+    if (isDebugging) {
+      logCommand(componentId, cmdArgs)
+    }
 
-    texImage2D(componentId, ...args) {
-        if (isWeexIOS) {
-            if (args.length === 6) {
-                const [target, level, internalformat, format, type, image] = args;
-                GBridge.callNative(
-                    componentId,
-                    GLmethod.texImage2D + ',' + 6 + ',' + target + ',' + level + ',' + internalformat + ',' + format + ',' + type + ',' + image.src
-                )
-            } else if (args.length === 9) {
-                const [target, level, internalformat, width, height, border, format, type, image] = args;
-                GBridge.callNative(
-                    componentId,
-                    GLmethod.texImage2D + ',' + 9 + ',' + target + ',' + level + ',' + internalformat + ',' + width + ',' + height + ',' + border + ',' +
-                    + format + ',' + type + ',' + (image ? image.src : 0)
-                )
-            }
-        } else if (isWeexAndroid) {
-            if (args.length === 6) {
-                const [target, level, internalformat, format, type, image] = args;
-                GCanvasModule.texImage2D(componentId, target, level, internalformat, format, type, image.src);
-            } else if (args.length === 9) {
-                const [target, level, internalformat, width, height, border, format, type, image] = args;
-                GCanvasModule.texImage2D(componentId, target, level, internalformat, width, height, border, format, type, (image ? image.src : 0));
-            }
-        }
-    },
+    commandsCache[componentId].push(cmdArgs)
 
-    texSubImage2D(componentId, target, level, xoffset, yoffset, format, type, image) {
-        if (isWeexIOS) {
-            if (arguments.length === 8) {
-                GBridge.callNative(
-                    componentId,
-                    GLmethod.texSubImage2D + ',' + 6 + ',' + target + ',' + level + ',' + xoffset + ',' + yoffset, + ',' + format + ',' + type + ',' + image.src
-                )
-            }
-        } else if (isWeexAndroid) {
-            GCanvasModule.texSubImage2D(componentId, target, level, xoffset, yoffset, format, type, image.src);
-        }
-    },
+    if (!cache || isComboDisabled) {
+      return GBridge.flushNative(componentId)
+    } else {
+      return undefined
+    }
+  },
 
-    bindImageTexture(componentId, src, imageId) {
-        GCanvasModule.bindImageTexture([src, imageId], componentId);
-    },
+  texImage2D(componentId, ...args) {
+    if (isWeexIOS) {
+      if (args.length === 6) {
+        const [target, level, internalformat, format, type, image] = args
+        GBridge.callNative(
+          componentId,
+          GLmethod.texImage2D +
+            ',' +
+            6 +
+            ',' +
+            target +
+            ',' +
+            level +
+            ',' +
+            internalformat +
+            ',' +
+            format +
+            ',' +
+            type +
+            ',' +
+            image.src,
+        )
+      } else if (args.length === 9) {
+        const [target, level, internalformat, width, height, border, format, type, image] = args
+        GBridge.callNative(
+          componentId,
+          GLmethod.texImage2D +
+            ',' +
+            9 +
+            ',' +
+            target +
+            ',' +
+            level +
+            ',' +
+            internalformat +
+            ',' +
+            width +
+            ',' +
+            height +
+            ',' +
+            border +
+            ',' +
+            +format +
+            ',' +
+            type +
+            ',' +
+            (image ? image.src : 0),
+        )
+      }
+    } else if (isWeexAndroid) {
+      if (args.length === 6) {
+        const [target, level, internalformat, format, type, image] = args
+        GCanvasModule.texImage2D(
+          componentId,
+          target,
+          level,
+          internalformat,
+          format,
+          type,
+          image.src,
+        )
+      } else if (args.length === 9) {
+        const [target, level, internalformat, width, height, border, format, type, image] = args
+        GCanvasModule.texImage2D(
+          componentId,
+          target,
+          level,
+          internalformat,
+          width,
+          height,
+          border,
+          format,
+          type,
+          image ? image.src : 0,
+        )
+      }
+    }
+  },
 
-    perloadImage([url, id], callback) {
-        GCanvasModule.preLoadImage([url, id], function (image) {
-            image.url = url;
-            image.id = id;
-            callback(image);
-        });
-    },
+  texSubImage2D(componentId, target, level, xoffset, yoffset, format, type, image) {
+    if (isWeexIOS) {
+      if (arguments.length === 8) {
+        GBridge.callNative(
+          componentId,
+          GLmethod.texSubImage2D +
+            ',' +
+            6 +
+            ',' +
+            target +
+            ',' +
+            level +
+            ',' +
+            xoffset +
+            ',' +
+            yoffset,
+          +',' + format + ',' + type + ',' + image.src,
+        )
+      }
+    } else if (isWeexAndroid) {
+      GCanvasModule.texSubImage2D(
+        componentId,
+        target,
+        level,
+        xoffset,
+        yoffset,
+        format,
+        type,
+        image.src,
+      )
+    }
+  },
 
-	measureText(text, fontStyle, componentId) {
-	    return GCanvasModule.measureText([text, fontStyle], componentId);
-	},
+  bindImageTexture(componentId, src, imageId) {
+    GCanvasModule.bindImageTexture([src, imageId], componentId)
+  },
 
-	getImageData (componentId, x, y, w, h, callback) {
-		GCanvasModule.getImageData([x, y,w,h],componentId,callback);
-	},
+  perloadImage([url, id], callback) {
+    GCanvasModule.preLoadImage([url, id], function (image) {
+      image.url = url
+      image.id = id
+      callback(image)
+    })
+  },
 
-	putImageData (componentId, data, x, y, w, h, callback) {
-		GCanvasModule.putImageData([x, y,w,h,data],componentId,callback);
-	},
+  measureText(text, fontStyle, componentId) {
+    return GCanvasModule.measureText([text, fontStyle], componentId)
+  },
 
-	toTempFilePath(componentId, x, y, width, height, destWidth, destHeight, fileType, quality, callback){
-		GCanvasModule.toTempFilePath([x, y, width,height, destWidth, destHeight, fileType, quality], componentId, callback);
-	}
+  getImageData(componentId, x, y, w, h, callback) {
+    GCanvasModule.getImageData([x, y, w, h], componentId, callback)
+  },
+
+  putImageData(componentId, data, x, y, w, h, callback) {
+    GCanvasModule.putImageData([x, y, w, h, data], componentId, callback)
+  },
+
+  toTempFilePath(
+    componentId,
+    x,
+    y,
+    width,
+    height,
+    destWidth,
+    destHeight,
+    fileType,
+    quality,
+    callback,
+  ) {
+    GCanvasModule.toTempFilePath(
+      [x, y, width, height, destWidth, destHeight, fileType, quality],
+      componentId,
+      callback,
+    )
+  },
 }
 
-export default GBridge;
+export default GBridge

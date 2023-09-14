@@ -1,22 +1,22 @@
 // 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 1   82 6 714 82  0 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
-import {getTransferedObjectUUID} from './classUtils';
+import { getTransferedObjectUUID } from './classUtils'
 
-const name = 'WebGLRenderBuffer';
+const name = 'WebGLRenderBuffer'
 
 function uuid(id) {
-    return getTransferedObjectUUID(name, id);
+  return getTransferedObjectUUID(name, id)
 }
 
 export default class WebGLRenderbuffer {
-    className = name;
+  className = name
 
-    constructor(id) {
-        this.id = id;
-    }
+  constructor(id) {
+    this.id = id
+  }
 
-    static uuid = uuid;
+  static uuid = uuid
 
-    uuid() {
-        return uuid(this.id);
-    }
+  uuid() {
+    return uuid(this.id)
+  }
 }
