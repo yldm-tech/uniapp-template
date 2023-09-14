@@ -7,10 +7,9 @@ const memberStore = useMemberStore()
 </script>
 
 <template>
-  <view class="my">
-    <my-header />
-    <my-menu />
-  </view>
+  <todo-header />
+  <my-header />
+  <my-menu />
 </template>
 
 <style lang="scss">

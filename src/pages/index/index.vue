@@ -1,8 +1,7 @@
 <template>
-  <view class="mt-12">
-    <todo-tasks />
-    <todo-ongoing />
-  </view>
+  <todo-header />
+  <todo-tasks />
+  <todo-ongoing />
 </template>
 
 <script setup lang="ts">

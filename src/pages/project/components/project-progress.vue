@@ -10,7 +10,7 @@
       />
     </view>
 
-    <scroll-view class="mx-2 whitespace-nowrap" scroll-x>
+    <scroll-view :scroll-left="100" class="mx-2 whitespace-nowrap" scroll-x>
       <view
         :style="{ background: item.bgColor }"
         class="inline-block rounded-5 w-52 p-3 whitespace-normal m-3 h-28"

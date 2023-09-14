@@ -13,6 +13,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
+        "backgroundTextStyle": "light",
 				"navigationStyle": "custom",
 				"navigationBarTitleText": "首页"
 			}
@@ -20,6 +21,8 @@
 		{
 			"path": "pages/my/my",
 			"style": {
+        "backgroundTextStyle": "light",
+				"navigationStyle": "custom",
 				"navigationBarTitleText": "我的"
 			}
 		},
@@ -32,11 +35,11 @@
 			}
 		},
 		{
-			"path": "pages/today/today",
+			"path": "pages/task/task",
 			"style": {
 				"backgroundTextStyle": "light",
 				"navigationStyle": "custom",
-				"navigationBarTitleText": "今日"
+				"navigationBarTitleText": "任务"
 			}
 		},
 		{
@@ -75,7 +78,7 @@
 			},
 			{
 				"text": "任务",
-				"pagePath": "pages/today/today",
+				"pagePath": "pages/task/task",
 				"iconPath": "static/tabs/category_default.png",
 				"selectedIconPath": "static/tabs/category_selected.png"
 			},

@@ -1,21 +1,6 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-import TodoContent from './components/todo-content.vue'
-
-// tabs 数据
-const orderTabs = ref([
-  { orderState: 0, title: 'Mon' },
-  { orderState: 1, title: 'Tue' },
-  { orderState: 2, title: 'Thu' },
-  { orderState: 3, title: 'Wen' },
-  { orderState: 4, title: 'Fri' },
-])
-
-const activeIndex = ref(0)
-</script>
-
 <template>
-  <view class="flex justify-between mt-12">
+  <todo-header />
+  <view class="flex justify-between">
     <view class="mx-5">
       <text class="block text-2xl font-bold">June,03</text>
       <text class="block text-sm text-gray-500 mt-2">16 tasks Today</text>
@@ -52,6 +37,22 @@ const activeIndex = ref(0)
     </swiper>
   </view>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+import TodoContent from './components/todo-content.vue'
+
+// tabs 数据
+const orderTabs = ref([
+  { orderState: 0, title: 'Mon' },
+  { orderState: 1, title: 'Tue' },
+  { orderState: 2, title: 'Thu' },
+  { orderState: 3, title: 'Wen' },
+  { orderState: 4, title: 'Fri' },
+])
+
+const activeIndex = ref(0)
+</script>
 
 <style lang="scss">
 page {

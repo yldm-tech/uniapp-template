@@ -9,11 +9,10 @@ const onTap = () => {
 </script>
 
 <template>
-  <view class="mt-12">
-    <project-card />
-    <project-progress />
-    <project-task-group />
-  </view>
+  <todo-header />
+  <project-card />
+  <project-progress />
+  <project-task-group />
 </template>
 
 <style lang="scss"></style>

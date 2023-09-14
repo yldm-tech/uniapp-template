@@ -1,4 +1,5 @@
 <template>
+  <todo-header />
   <view>
     <image
       @tap="goHome"
