@@ -1,11 +1,12 @@
 <template>
   <view class="todo-container flex justify-between px-5 py-5">
-    <view class="left">
-      <image class="w-10 h-10 inline-block" src="/static/images/menu.png" mode="scaleToFill" />
-      <text class="ml-6 text-gray-500">June 03,2023</text>
-    </view>
-    <view class="right">
-      <image class="h-10 w-10" src="/static/images/avatar.png" mode="scaleToFill" />
+    <view class="flex flex-col items-center w-full">
+      <image class="h-30 w-30" src="/static/images/avatar.png" mode="scaleToFill" />
+      <view class="py-2 text-xl font-bold">Evan Hu</view>
+      <view class="text-gray-400">xiaomo@xiaomo.info</view>
+      <view class="w-full my-5">
+        <fui-button>Edit Profile</fui-button>
+      </view>
     </view>
   </view>
 </template>

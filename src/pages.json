@@ -74,7 +74,7 @@
 				"selectedIconPath": "static/tabs/home_selected.png"
 			},
 			{
-				"text": "今天",
+				"text": "任务",
 				"pagePath": "pages/today/today",
 				"iconPath": "static/tabs/category_default.png",
 				"selectedIconPath": "static/tabs/category_selected.png"
