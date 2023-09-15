@@ -11,15 +11,14 @@
     <view>
       <fui-circle
         :percent="75"
+        :width="150"
         color="#FFF"
         background="#E9D5FF"
         foreground="#FFF"
-        :strokeWidth="5"
+        :strokeWidth="8"
       ></fui-circle>
     </view>
-    <view
-      class="flex rounded-1 justify-center text-white items-center bg-gray-400 text-xs bg-opacity-50 w-4 h-4 text-center"
-      >...</view
-    >
   </view>
 </template>
+
+<script setup lang="ts"></script>

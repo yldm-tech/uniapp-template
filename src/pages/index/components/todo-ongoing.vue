@@ -15,13 +15,13 @@
           />
           <text class="text-gray-400 text-xs">9:00AM - 12:00 PM</text>
           <view
-            class="my-8 mx-2 text-bold rounded-1 px-3 py-1 w-[120px] bg-pink-100 text-xs text-fuchsia-500"
+            class="my-3 mx-2 text-bold rounded-1 px-3 py-1 w-[120px] bg-pink-100 text-xs text-fuchsia-500"
             >Complete: 80%</view
           >
         </view>
       </view>
-      <view class="pt-5">
-        <image class="w-[100px]" src="/static/images/calendar.png" mode="widthFix" />
+      <view class="pt-2">
+        <image class="w-[80px]" src="/static/images/calendar.png" mode="widthFix" />
       </view>
     </view>
   </view>

@@ -10,7 +10,7 @@
       />
     </view>
 
-    <scroll-view scroll-y class="h-96">
+    <scroll-view scroll-y class="h-[500px]">
       <view class="w-full h-12 my-10" v-for="item in items" :key="item.id">
         <view
           class="flex justify-between border-[0.3px] border-gray-100 shadow-sm items-center rounded-3"
