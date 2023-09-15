@@ -49,7 +49,7 @@
 			}
 		},
 		{
-			"path": "pages/launch/launch",
+			"path": "pages/start/start",
 			"style": {
         "backgroundTextStyle": "light",
 				"navigationStyle": "custom",
