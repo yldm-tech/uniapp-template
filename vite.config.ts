@@ -4,6 +4,7 @@ import tailwindcss from 'tailwindcss'
 import tailwindcssConfig from './tailwind.config' // 注意匹配实际文件
 import postcssPresetEnv from 'postcss-preset-env'
 import uni from '@dcloudio/vite-plugin-uni'
+import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import uniTailwind from '@uni-helper/vite-plugin-uni-tailwind'
 
 // https://vitejs.dev/config/
@@ -23,6 +24,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    UniLayouts(),
     uni(),
     uniTailwind({
       /* options */
