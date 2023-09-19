@@ -25,7 +25,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
           {
@@ -34,7 +35,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
         ],
@@ -50,7 +52,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
           {
@@ -59,7 +62,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
         ],
@@ -81,7 +85,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
           {
@@ -90,7 +95,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
         ],
@@ -106,7 +112,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
           {
@@ -115,7 +122,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
         ],
@@ -137,7 +145,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
           {
@@ -146,7 +155,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
         ],
@@ -162,7 +172,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
           {
@@ -171,7 +182,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
         ],
@@ -193,7 +205,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
           {
@@ -202,7 +215,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
         ],
@@ -218,7 +232,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
           {
@@ -227,7 +242,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
         ],
@@ -249,7 +265,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
           {
@@ -258,7 +275,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
         ],
@@ -274,7 +292,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
           {
@@ -283,7 +302,8 @@ const categoryTopList = ref<CategoryTopItem[]>([
             discount: 32,
             name: 'B1',
             orderNum: 1,
-            picture: '/static/images/user_default.png',
+            picture:
+              'https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_default.png',
             price: 1800,
           },
         ],
