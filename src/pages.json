@@ -24,13 +24,13 @@
     {
       "path": "pages/cart/cart",
       "style": {
-        "navigationBarTitleText": "购物车"
+        "navigationBarTitleText": "明细"
       }
     },
     {
       "path": "pages/category/category",
       "style": {
-        "navigationBarTitleText": "分类"
+        "navigationBarTitleText": "积分"
       }
     },
     {
@@ -60,13 +60,13 @@
         "selectedIconPath": "static/tabs/home_selected.png"
       },
       {
-        "text": "分类",
+        "text": "积分",
         "pagePath": "pages/category/category",
         "iconPath": "static/tabs/category_default.png",
         "selectedIconPath": "static/tabs/category_selected.png"
       },
       {
-        "text": "购物车",
+        "text": "明细",
         "pagePath": "pages/cart/cart",
         "iconPath": "static/tabs/cart_default.png",
         "selectedIconPath": "static/tabs/cart_selected.png"
