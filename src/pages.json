@@ -27,22 +27,6 @@
       }
     },
     {
-      "path": "pages/cart/cart",
-      "style": {
-        "navigationStyle": "custom",
-        "navigationBarTextStyle": "white",
-        "navigationBarTitleText": "购物车"
-      }
-    },
-    {
-      "path": "pages/category/category",
-      "style": {
-        "navigationStyle": "custom",
-        "navigationBarTextStyle": "white",
-        "navigationBarTitleText": "分类"
-      }
-    },
-    {
       "path": "pages/login/login",
       "style": {
         "navigationStyle": "custom",
