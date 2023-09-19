@@ -9,7 +9,7 @@ const handleClick = (type: string) => {
       console.log('我的预约')
       break
     case '2':
-      console.log('我的钱包')
+      console.log('客服中心')
       break
     case '3':
       console.log('隐私政策')
