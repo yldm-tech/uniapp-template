@@ -1,6 +1,6 @@
 <template>
   <view :style="{ paddingBottom: bottom + 'px' }">
-    <fui-footer :text="`Copyright © ${year} yldm.tech`"></fui-footer>
+    <!-- <fui-footer :text="`Copyright © ${year} yldm.tech`"></fui-footer> -->
   </view>
 </template>
 
