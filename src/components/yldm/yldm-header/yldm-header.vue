@@ -1,5 +1,5 @@
 <template>
-  <view :style="{ paddingTop: top + 'px' }"> this is yldm-header </view>
+  <view :style="{ paddingTop: top + 'px' }"></view>
 </template>
 
 <script setup lang="ts">
