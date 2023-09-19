@@ -43,7 +43,7 @@ const handleClick = (type: string) => {
       </view>
     </view>
     <!-- items -->
-    <view>
+    <view class="mr-5">
       <fui-list :bottomBorder="false" :topBorder="false">
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('1')">
           <fui-icon
@@ -97,7 +97,7 @@ const handleClick = (type: string) => {
 
 <style lang="scss" scoped>
 .my {
-  background-image: url('/static/images/user_bg.png');
+  background-image: url('https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_bg.png');
   background-size: 45%;
   background-origin: border-box;
   background-repeat: no-repeat;
