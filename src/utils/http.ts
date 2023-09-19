@@ -1,40 +1,72 @@
-// axios基础的封装
-import axios from 'axios'
-import { ElMessage } from 'element-plus'
-import { useUserStore } from '@/stores/user'
-const httpInstance = axios.create({
-  baseURL: 'http://pcapi-xiaotuxian-front-devtest.itheima.net',
-  timeout: 60 * 1000,
-})
+import { useMemberStore } from '@/stores'
+
+const store = useMemberStore()
+const baseUrl = 'http://pcapi-xiaotuxian-front-devtest.itheima.net'
+const httpInterceptor = {
+  invoke(options: UniApp.RequestOptions) {
+    // 请求地址
+    if (!options.url?.startsWith('http')) {
+      options.url = baseUrl + options.url
+    }
+    // 超时时间
+    options.timeout = 30 * 1000
+
+    // 小程序端
+    options.header = {
+      ...options.header,
+      'source-client': 'miniapp',
+    }
+    // Token
+    const token = store.profile?.token
+    if (token) {
+      options.header.Authorization = `Bearer ${token}`
+    }
+  },
+}
 
 // 拦截器
+uni.addInterceptor('request', httpInterceptor)
 
-// axios请求拦截器
-httpInstance.interceptors.request.use(
-  (config) => {
-    // 1. 从pinia获取token数据
-    const userStore = useUserStore()
-    // 2. 按照后端的要求拼接token数据
-    const token = userStore.userInfo.token
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`
-    }
-    return config
-  },
-  (e) => Promise.reject(e),
-)
+uni.addInterceptor('uploadFile', httpInterceptor)
 
-// axios响应式拦截器
-httpInstance.interceptors.response.use(
-  (res) => res.data,
-  (e) => {
-    // 统一错误提示
-    ElMessage({
-      type: 'warning',
-      message: e.response.data.message,
+interface Result<T> {
+  code: number
+  msg: string
+  result: T
+}
+
+const http = <T>(options: UniApp.RequestOptions) => {
+  const memberStore = useMemberStore()
+  return new Promise<Result<T>>((resolve, reject) => {
+    uni.request({
+      ...options,
+      success(res) {
+        if (res.statusCode >= 200 && res.statusCode < 300) {
+          resolve(res.data as Result<T>)
+        } else if (res.statusCode === 401) {
+          memberStore.clearProfile()
+          uni.navigateTo({
+            url: '/pages/login/login',
+          })
+          reject(res)
+        } else {
+          uni.showToast({
+            title: (res.data as Result<T>).msg || '请求失败',
+            icon: 'none',
+          })
+          reject(res)
+        }
+      },
+      fail(err) {
+        // 网络错误
+        uni.showToast({
+          title: '网络错误',
+          icon: 'none',
+        })
+        reject(err)
+      },
     })
-    return Promise.reject(e)
-  },
-)
+  })
+}
 
-export default httpInstance
+export const request = http
