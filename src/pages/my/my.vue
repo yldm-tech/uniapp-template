@@ -35,10 +35,10 @@ const handleClick = (type: string) => {
       </view>
       <view class="mx-8">
         <view class="text-xl text-black">
-          <text class="mr-1">浪漫土狗</text>
+          <text class="mr-1">小莫</text>
         </view>
         <view class="text-md py-1 text-gray-300">
-          <text>ID:25123534</text>
+          <text>ID:83387856</text>
         </view>
       </view>
     </view>
