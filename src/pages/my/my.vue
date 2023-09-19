@@ -33,10 +33,9 @@ const handleClick = (type: string) => {
       <view>
         <fui-avatar class="mx-5" width="200" src="/static/images/user_default.png"></fui-avatar>
       </view>
-      <view class="mx-5">
+      <view class="mx-8">
         <view class="text-xl text-black">
-          <text>浪漫土狗</text>
-          <fui-icon name="edit" size="30" />
+          <text class="mr-1">浪漫土狗</text>
         </view>
         <view class="text-md py-1 text-gray-300">
           <text>ID:25123534</text>
@@ -58,11 +57,11 @@ const handleClick = (type: string) => {
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('2')">
           <fui-icon
             class="bg-red-100 w-12 h-12 flex justify-center items-center text-center mx-3 rounded-full"
-            name="wallet"
+            name="kefu"
             color="#EF5454"
             size="40"
           />
-          <text class="text-xl font-normal">我的钱包</text>
+          <text class="text-xl font-normal">联系客服</text>
         </fui-list-cell>
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('3')">
           <fui-icon
@@ -99,7 +98,7 @@ const handleClick = (type: string) => {
 <style lang="scss" scoped>
 .my {
   background-image: url('/static/images/user_bg.png');
-  background-size: 35%;
+  background-size: 45%;
   background-origin: border-box;
   background-repeat: no-repeat;
 }
