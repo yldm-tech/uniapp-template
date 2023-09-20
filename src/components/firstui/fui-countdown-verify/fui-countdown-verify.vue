@@ -1,4 +1,4 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1      82 67148 20  6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
+<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：18  2 67 14 8 2   0 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
 	<view class="fui-countdown__verify" :class="{'fui-cdv__disabled':status>1}"
 		:style="{ width: width+'rpx', height: height+'rpx', marginLeft: marginLeft+'rpx',marginRight:marginRight+'rpx', borderRadius: radius+'rpx',  background: background,borderColor:!getBorderColor || getBorderColor===true?background:getBorderColor }">

@@ -1,4 +1,4 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：  1 82   67 148 2  06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
+<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：18  2  6 71  4 8 20 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
 	<view class="fui-top__popup-wrap" :class="{'fui-top__popwrap-show':show}"
 		:style="{ zIndex: zIndex,background:maskBackground }" @tap.stop="handleClose" @touchmove.stop.prevent="stop"

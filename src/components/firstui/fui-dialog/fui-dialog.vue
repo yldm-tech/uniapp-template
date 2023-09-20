@@ -1,4 +1,4 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：182 6 7 14   8 2  0 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
+<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：182    6  7 14  820 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
 	<view @tap="maskClose" :style="{background:maskBackground}" class="fui-dialog__wrap"
 		:class="{'fui-wrap__show':show}" @touchmove.stop.prevent="stop" v-if="visible || !isNvue" ref="fui_dialog_ani">

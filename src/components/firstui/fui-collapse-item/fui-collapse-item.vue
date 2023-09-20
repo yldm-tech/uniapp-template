@@ -1,4 +1,4 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1  826 7  1  4 820  6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
+<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 1 8 2 67   14820   6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
 	<view class="fui-collapse__item">
 		<view @tap.stop="onClick(!isOpen)" class="fui-collapse-item__title" :class="{'fui-collapse__disabled':disabled}"
