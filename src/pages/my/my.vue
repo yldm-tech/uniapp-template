@@ -54,15 +54,17 @@ const handleClick = (type: string) => {
           />
           <text class="text-xl font-normal">我的预约</text>
         </fui-list-cell>
-        <fui-list-cell :bottomBorder="false" arrow @click="handleClick('2')">
-          <fui-icon
-            class="bg-red-100 w-12 h-12 flex justify-center items-center text-center mx-3 rounded-full"
-            name="kefu"
-            color="#EF5454"
-            size="40"
-          />
-          <text class="text-xl font-normal">联系客服</text>
-        </fui-list-cell>
+        <button open-type="contact">
+          <fui-list-cell :bottomBorder="false" arrow @click="handleClick('2')">
+            <fui-icon
+              class="bg-red-100 w-12 h-12 flex justify-center items-center text-center mx-3 rounded-full"
+              name="kefu"
+              color="#EF5454"
+              size="40"
+            />
+            <text class="text-xl font-normal">联系客服</text>
+          </fui-list-cell>
+        </button>
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('3')">
           <fui-icon
             class="bg-blue-200 w-12 h-12 flex justify-center items-center text-center mx-3 rounded-full"
