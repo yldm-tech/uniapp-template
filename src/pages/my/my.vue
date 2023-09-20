@@ -100,7 +100,7 @@ const handleClick = (type: string) => {
 <style lang="scss" scoped>
 .my {
   background-image: url('https://mp-cbe7a562-c50b-4ab4-967b-265c3e6ab630.cdn.bspapp.com/common/user_bg.png');
-  background-size: 45%;
+  background-size: 40%;
   background-origin: border-box;
   background-repeat: no-repeat;
 }

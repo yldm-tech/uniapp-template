@@ -20,6 +20,7 @@
     },
     {
       "path": "pages/my/my",
+      "layout": false,
       "style": {
         "navigationStyle": "custom",
         "navigationBarTextStyle": "white",
