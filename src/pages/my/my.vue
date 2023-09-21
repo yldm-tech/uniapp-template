@@ -52,7 +52,7 @@ const handleClick = (type: string) => {
             color="#707EFF"
             size="40"
           />
-          <text class="text-xl font-normal">我的预约</text>
+          <text class="text-xl font-normal">我的收藏</text>
         </fui-list-cell>
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('2')">
           <fui-icon

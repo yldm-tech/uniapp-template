@@ -1,488 +1,82 @@
 <script setup lang="ts">
-import { onLoad } from '@dcloudio/uni-app'
-import type { CategoryTopItem } from '@/types/category'
-import { computed } from 'vue'
 import { ref } from 'vue'
-import { getCategoryTop } from '@/services/category'
-
+import { tabs } from '@/mocks/category'
 const activeIndex = ref(0)
 
-// 轮播图
-
-const categoryTopList = ref<CategoryTopItem[]>([
-  {
-    id: '1',
-    name: '美国',
-    children: [
-      {
-        id: '1',
-        name: 'B1/B2',
-        picture: 'https://img.yzcdn.cn/vant/apple-1.jpg',
-        goods: [
-          {
-            id: '1',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-          {
-            id: '2',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-        ],
-      },
-      {
-        id: '2',
-        name: 'H1',
-        picture: 'https://img.yzcdn.cn/vant/apple-1.jpg',
-        goods: [
-          {
-            id: '1',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-          {
-            id: '2',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: '2',
-    name: '加拿大',
-    children: [
-      {
-        id: '1',
-        name: '加拿大签证',
-        picture: 'https://img.yzcdn.cn/vant/apple-1.jpg',
-        goods: [
-          {
-            id: '1',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-          {
-            id: '2',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-        ],
-      },
-      {
-        id: '2',
-        name: 'H1',
-        picture: 'https://img.yzcdn.cn/vant/apple-1.jpg',
-        goods: [
-          {
-            id: '1',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-          {
-            id: '2',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: '3',
-    name: '澳大利亚',
-    children: [
-      {
-        id: '3',
-        name: '澳大利亚',
-        picture: 'https://img.yzcdn.cn/vant/apple-1.jpg',
-        goods: [
-          {
-            id: '1',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-          {
-            id: '2',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-        ],
-      },
-      {
-        id: '2',
-        name: 'H1',
-        picture: 'https://img.yzcdn.cn/vant/apple-1.jpg',
-        goods: [
-          {
-            id: '1',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-          {
-            id: '2',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: '3',
-    name: '新加坡',
-    children: [
-      {
-        id: '1',
-        name: '新加坡',
-        picture: 'https://img.yzcdn.cn/vant/apple-1.jpg',
-        goods: [
-          {
-            id: '1',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-          {
-            id: '2',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-        ],
-      },
-      {
-        id: '4',
-        name: 'H1',
-        picture: 'https://img.yzcdn.cn/vant/apple-1.jpg',
-        goods: [
-          {
-            id: '1',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-          {
-            id: '2',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: '4',
-    name: '日本',
-    children: [
-      {
-        id: '1',
-        name: '日本签证',
-        picture: 'https://img.yzcdn.cn/vant/apple-1.jpg',
-        goods: [
-          {
-            id: '1',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-          {
-            id: '2',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-        ],
-      },
-      {
-        id: '2',
-        name: 'H1',
-        picture: 'https://img.yzcdn.cn/vant/apple-1.jpg',
-        goods: [
-          {
-            id: '1',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-          {
-            id: '2',
-            desc: 'b1',
-            discount: 32,
-            name: 'B1',
-            orderNum: 1,
-            picture: '/static/images/user_default.png',
-            price: 1800,
-          },
-        ],
-      },
-    ],
-  },
-])
-
-const subCategoryList = computed(() => {
-  return categoryTopList.value[activeIndex.value]?.children || []
-})
-
-const isLoading = ref(false)
+const handleChange = (tab: any) => {
+  activeIndex.value = tab.index
+}
 </script>
 
 <template>
-  <view class="viewport">
-    <!-- 分类 -->
-    <view v-if="isLoading" />
-    <view class="categories" v-else>
-      <!-- 左侧：一级分类 -->
-      <scroll-view class="primary" scroll-y>
-        <view
-          v-for="(item, index) in categoryTopList"
-          :key="item.id"
-          class="item"
-          @tap="activeIndex = index"
-          :class="{ active: index === activeIndex }"
-        >
-          <text class="name"> {{ item.name }} </text>
-        </view>
-      </scroll-view>
+  <view class="">
+    <fui-tabs
+      @change="handleChange"
+      :current="activeIndex"
+      :tabs="tabs"
+      :short="false"
+      scroll
+      alignLeft
+    ></fui-tabs>
 
-      <!-- 右侧：二级分类 -->
-      <scroll-view class="secondary" scroll-y>
-        <!-- 内容区域 -->
-        <view class="panel" v-for="item in subCategoryList" :key="item.id">
-          <view class="title">
-            <text class="name">{{ item.name }}</text>
+    <scroll-view
+      v-show="activeIndex === index"
+      class="flex-1"
+      scroll-y
+      v-for="(tab, index) in tabs"
+      :key="`scroll-${index}`"
+    >
+      <fui-grid v-for="tabItem in tab.children" :key="tabItem.id">
+        <fui-text class="w-full block m-3" :text="`${tabItem.name}`" :size="60"></fui-text>
+        <fui-grid-item v-for="(item, index) in tabItem.children" :key="`grid-${index}`">
+          <view class="fui-grid__cell">
+            <image src="/static/images/user_default.png" class="w-12 h-12" mode="widthFix"></image>
+            <text>{{ item.name }}</text>
           </view>
-          <view class="section">
-            <navigator
-              v-for="goods in item.goods"
-              :key="goods.id"
-              class="goods"
-              hover-class="none"
-              :url="`/pages/goods/goods?id=${goods.id}`"
-            >
-              <image class="image" :src="goods.picture"></image>
-              <view class="name ellipsis">{{ goods.name }}</view>
-              <view class="price">
-                <text class="symbol">¥</text>
-                <text class="number">{{ goods.price }}</text>
-              </view>
-            </navigator>
-          </view>
-        </view>
-      </scroll-view>
-    </view>
+        </fui-grid-item>
+      </fui-grid>
+    </scroll-view>
   </view>
 </template>
 
-<style lang="scss">
+<style>
 page {
-  height: 100%;
-  overflow: hidden;
+  background-color: #ffffff;
+  /* 非nvue端可通过此变量控制边框颜色 */
+  /* --fui-color-border:#465CFF; */
 }
-.viewport {
-  height: 100%;
+
+.fui-section__title {
+  margin-left: 32rpx;
+}
+
+.fui-grid__cell {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-}
-.search {
-  padding: 0 30rpx 20rpx;
-  background-color: #fff;
-  .input {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 64rpx;
-    padding-left: 26rpx;
-    color: #8b8b8b;
-    font-size: 28rpx;
-    border-radius: 32rpx;
-    background-color: #f3f4f4;
-  }
-}
-.icon-search {
-  &::before {
-    margin-right: 10rpx;
-  }
-}
-/* 分类 */
-.categories {
   flex: 1;
-  min-height: 400rpx;
-  display: flex;
+  font-size: 28rpx;
+  font-weight: 400;
 }
-/* 一级分类 */
-.primary {
-  overflow: hidden;
-  width: 180rpx;
-  flex: none;
-  background-color: #f6f6f6;
-  .item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 96rpx;
-    font-size: 26rpx;
-    color: #595c63;
-    position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      left: 42rpx;
-      bottom: 0;
-      width: 96rpx;
-      border-top: 1rpx solid #e3e4e7;
-    }
-  }
-  .active {
-    background-color: #fff;
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 8rpx;
-      height: 100%;
-      background-color: #27ba9b;
-    }
-  }
+
+.fui-padding {
+  padding: 36rpx 0;
 }
-.primary .item:last-child::after,
-.primary .active::after {
-  display: none;
+
+.fui-icon {
+  width: 96rpx;
+  height: 96rpx;
+  margin-bottom: 16rpx;
 }
-/* 二级分类 */
-.secondary {
-  background-color: #fff;
-  .carousel {
-    height: 200rpx;
-    margin: 0 30rpx 20rpx;
-    border-radius: 4rpx;
-    overflow: hidden;
-  }
-  .panel {
-    margin: 0 30rpx 0rpx;
-  }
-  .title {
-    height: 60rpx;
-    line-height: 60rpx;
-    color: #333;
-    font-size: 28rpx;
-    border-bottom: 1rpx solid #f7f7f8;
-    .more {
-      float: right;
-      padding-left: 20rpx;
-      font-size: 24rpx;
-      color: #999;
-    }
-  }
-  .more {
-    &::after {
-      font-family: 'erabbit' !important;
-      content: '\e6c2';
-    }
-  }
-  .section {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20rpx 0;
-    .goods {
-      width: 150rpx;
-      margin: 0rpx 30rpx 20rpx 0;
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
-      image {
-        width: 150rpx;
-        height: 150rpx;
-      }
-      .name {
-        padding: 5rpx;
-        font-size: 22rpx;
-        color: #333;
-      }
-      .price {
-        padding: 5rpx;
-        font-size: 18rpx;
-        color: #cf4444;
-      }
-      .number {
-        font-size: 24rpx;
-        margin-left: 2rpx;
-      }
-    }
-  }
+
+.fui-icon__2x {
+  width: 64rpx;
+  height: 64rpx;
+  margin-bottom: 16rpx;
+}
+
+.fui-flex__column {
+  flex: 1;
 }
 </style>

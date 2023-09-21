@@ -1,8 +1,7 @@
-import type { CategoryTopItem, GoodsResult } from '@/types/category'
 import { request } from '@/utils/http'
 
 export const getCategoryTop = () => {
-  return request<CategoryTopItem[]>({
+  return request<any[]>({
     method: 'GET',
     url: '/category/top',
   })
@@ -13,7 +12,7 @@ export const getCategoryTop = () => {
  * @param id 商品id
  */
 export const getGoodsById = (id: string) => {
-  return request<GoodsResult>({
+  return request<any>({
     method: 'GET',
     url: '/goods',
     data: { id },

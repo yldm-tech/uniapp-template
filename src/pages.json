@@ -74,13 +74,13 @@
         "selectedIconPath": "static/tabs/home_selected.png"
       },
       {
-        "text": "分类",
+        "text": "成就",
         "pagePath": "pages/category/category",
         "iconPath": "static/tabs/category_default.png",
         "selectedIconPath": "static/tabs/category_selected.png"
       },
       {
-        "text": "购物车",
+        "text": "社区",
         "pagePath": "pages/cart/cart",
         "iconPath": "static/tabs/cart_default.png",
         "selectedIconPath": "static/tabs/cart_selected.png"
