@@ -5,12 +5,29 @@ import { ref } from 'vue'
 export const useUserStore = defineStore(
   'user',
   () => {
-    const userInfo = ref<any>()
+    // 会员信息
+    const profile = ref<any>()
+    const isLogin = ref(false)
 
+    // 保存会员信息，登录时使用
+    const setProfile = (val: any) => {
+      profile.value = val
+    }
+
+    // 清理会员信息，退出时使用
+    const clearProfile = () => {
+      profile.value = undefined
+    }
+
+    // 记得 return
     return {
-      userInfo,
+      isLogin,
+      profile,
+      setProfile,
+      clearProfile,
     }
   },
+
   {
     persist: {
       // 持久化配置

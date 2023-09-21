@@ -38,7 +38,9 @@
     "src/**/*.vue"
   ],
   "exclude": [
+    "node_modules",
+    "dist",
     "src/components/firstui/**/*",
-    "src/common/**/*",
+    "src/common",
 ]
 }
