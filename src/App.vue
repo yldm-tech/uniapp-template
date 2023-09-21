@@ -17,4 +17,6 @@ tryOnHide(() => {
 @import './styles/tailwind.scss';
 // 字体图标
 @import './styles/fonts.scss';
+// fui
+@import './styles/fui-app.css';
 </style>
