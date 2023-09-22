@@ -50,12 +50,6 @@ dependencies:
   '@dcloudio/uni-ui':
     specifier: ^1.4.28
     version: 1.4.28
-  '@uni-helper/uni-use':
-    specifier: ^0.15.0
-    version: 0.15.0(@vueuse/core@9.13.0)(postcss@8.4.29)(typescript@5.2.2)(vue@3.3.4)
-  '@vueuse/core':
-    specifier: '9'
-    version: 9.13.0(vue@3.3.4)
   axios:
     specifier: ^1.5.0
     version: 1.5.0
@@ -3898,28 +3892,6 @@ packages:
       '@uni-helper/uni-app-types': 0.5.9(typescript@5.2.2)
       vue3: /vue@3.3.4
     dev: true
-
-  /@uni-helper/uni-use@0.15.0(@vueuse/core@9.13.0)(postcss@8.4.29)(typescript@5.2.2)(vue@3.3.4):
-    resolution: {integrity: sha512-RYBd95L+xJ8r5q+NNpS2R4PnWigiw9SJDSZw/VcLb6Fz7w2sqU0Lhem+LTNz1jGahnm19zvUhn9ct5S1QrN98A==}
-    engines: {node: '>=14.18'}
-    peerDependencies:
-      '@vueuse/core': ^9.0.0
-      typescript: ^4.5.0 || ^5.0.0
-      vue: ^3.2.0
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@dcloudio/types': 3.3.3
-      '@dcloudio/uni-app': 3.0.0-alpha-3081220230802001(@dcloudio/types@3.3.3)(postcss@8.4.29)(vue@3.3.4)
-      '@vueuse/core': 9.13.0(vue@3.3.4)
-      typescript: 5.2.2
-      vue: 3.3.4
-    transitivePeerDependencies:
-      - postcss
-      - supports-color
-      - ts-node
-    dev: false
 
   /@uni-helper/vite-plugin-uni-layouts@0.1.3:
     resolution: {integrity: sha512-wONCO6fLc3pefMGeFxBm2/uGPxMIuT0JEs2MRqawEvgPbNt/hPic6rwuaoEKP0WeWhY5HyWeHqeGsJErEkU/4w==}

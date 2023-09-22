@@ -64,8 +64,6 @@
     "@dcloudio/uni-mp-xhs": "3.0.0-alpha-3081220230802001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3081220230802001",
     "@dcloudio/uni-ui": "^1.4.28",
-    "@uni-helper/uni-use": "^0.15.0",
-    "@vueuse/core": "9",
     "axios": "^1.5.0",
     "element-plus": "^2.3.12",
     "pinia": "2.0.27",
