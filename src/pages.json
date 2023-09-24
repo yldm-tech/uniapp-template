@@ -29,12 +29,12 @@
       }
     },
     {
-      "path": "pages/cart/cart",
+      "path": "pages/community/community",
       "middleware": ["auth"],
       "style": {
         "navigationStyle": "custom",
         "navigationBarTextStyle": "white",
-        "navigationBarTitleText": "购物车"
+        "navigationBarTitleText": "社区"
       }
     },
     {
@@ -81,7 +81,7 @@
       },
       {
         "text": "社区",
-        "pagePath": "pages/cart/cart",
+        "pagePath": "pages/community/community",
         "iconPath": "static/tabs/cart_default.png",
         "selectedIconPath": "static/tabs/cart_selected.png"
       },
