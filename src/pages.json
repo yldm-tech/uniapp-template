@@ -38,11 +38,11 @@
       }
     },
     {
-      "path": "pages/category/category",
+      "path": "pages/billing/billing",
       "style": {
         "navigationStyle": "custom",
         "navigationBarTextStyle": "white",
-        "navigationBarTitleText": "分类"
+        "navigationBarTitleText": "明細"
       }
     },
     {
@@ -74,8 +74,8 @@
         "selectedIconPath": "static/tabs/home_selected.png"
       },
       {
-        "text": "分类",
-        "pagePath": "pages/category/category",
+        "text": "明細",
+        "pagePath": "pages/billing/billing",
         "iconPath": "static/tabs/category_default.png",
         "selectedIconPath": "static/tabs/category_selected.png"
       },

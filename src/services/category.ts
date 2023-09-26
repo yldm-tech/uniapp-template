@@ -1,5 +1,5 @@
 import type { CategoryTopItem, GoodsResult } from '@/types/category'
-import { request } from '@/utils/http'
+import { request } from '@/utils/http.util'
 
 export const getCategoryTop = () => {
   return request<CategoryTopItem[]>({
