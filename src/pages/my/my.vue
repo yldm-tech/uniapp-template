@@ -6,19 +6,19 @@ const memberStore = useMemberStore()
 const handleClick = (type: string) => {
   switch (type) {
     case '1':
-      console.log('我的预约')
+      console.log('ETC連携')
       break
     case '2':
-      console.log('客服中心')
+      console.log('ポイント連携')
       break
     case '3':
-      console.log('隐私政策')
+      console.log('プライバシー')
       break
     case '4':
-      console.log('帮助')
+      console.log('ヘルプ')
       break
     case '5':
-      console.log('设置')
+      console.log('ログアウト')
       break
     default:
       break
@@ -35,10 +35,10 @@ const handleClick = (type: string) => {
       </view>
       <view class="mx-8">
         <view class="text-xl text-black">
-          <text class="mr-1">小莫</text>
+          <text class="mr-1">涼風</text>
         </view>
         <view class="text-md py-1 text-gray-300">
-          <text>ID:83387856</text>
+          <text>ID:5123195</text>
         </view>
       </view>
     </view>
@@ -52,7 +52,7 @@ const handleClick = (type: string) => {
             color="#707EFF"
             size="40"
           />
-          <text class="text-xl font-normal">我的预约</text>
+          <text class="text-xl font-normal">ETC連携</text>
         </fui-list-cell>
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('2')">
           <fui-icon
@@ -61,7 +61,7 @@ const handleClick = (type: string) => {
             color="#EF5454"
             size="40"
           />
-          <text class="text-xl font-normal">联系客服</text>
+          <text class="text-xl font-normal">ポイント連携</text>
         </fui-list-cell>
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('3')">
           <fui-icon
@@ -70,7 +70,7 @@ const handleClick = (type: string) => {
             color="#369FFF"
             size="40"
           />
-          <text class="text-xl font-normal">隐私政策</text>
+          <text class="text-xl font-normal">プライバシー</text>
         </fui-list-cell>
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('4')">
           <fui-icon
@@ -79,7 +79,7 @@ const handleClick = (type: string) => {
             color="#ffc046"
             size="40"
           />
-          <text class="text-xl font-normal">帮助</text>
+          <text class="text-xl font-normal">ヘルプ</text>
         </fui-list-cell>
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('5')">
           <fui-icon
@@ -88,7 +88,7 @@ const handleClick = (type: string) => {
             color="#85d062"
             size="40"
           />
-          <text class="text-xl font-normal">设置</text>
+          <text class="text-xl font-normal">ログアウト</text>
         </fui-list-cell>
       </fui-list>
     </view>
