@@ -34,7 +34,7 @@ const handleClick = (type: string) => {
         <fui-avatar class="mx-5" width="200" src="/static/images/user_default.png"></fui-avatar>
       </view>
       <view class="mx-8">
-        <view class="text-xl text-black">
+        <view class="text-md text-black">
           <text class="mr-1">涼風</text>
         </view>
         <view class="text-md py-1 text-gray-300">
@@ -50,45 +50,45 @@ const handleClick = (type: string) => {
             class="bg-blue-200 w-12 h-12 flex justify-center items-center text-center mx-3 rounded-full"
             name="calendar"
             color="#707EFF"
-            size="40"
+            size="50"
           />
-          <text class="text-xl font-normal">ETC連携</text>
+          <text class="text-md font-normal">ETC明細連携</text>
         </fui-list-cell>
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('2')">
           <fui-icon
             class="bg-red-100 w-12 h-12 flex justify-center items-center text-center mx-3 rounded-full"
             name="kefu"
             color="#EF5454"
-            size="40"
+            size="50"
           />
-          <text class="text-xl font-normal">ポイント連携</text>
+          <text class="text-md font-normal">ポイント連携</text>
         </fui-list-cell>
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('3')">
           <fui-icon
             class="bg-blue-200 w-12 h-12 flex justify-center items-center text-center mx-3 rounded-full"
             name="star-fill"
             color="#369FFF"
-            size="40"
+            size="50"
           />
-          <text class="text-xl font-normal">プライバシー</text>
+          <text class="text-md font-normal">プライバシー</text>
         </fui-list-cell>
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('4')">
           <fui-icon
             class="bg-yellow-100 w-12 h-12 flex justify-center items-center text-center mx-3 rounded-full"
             name="help-fill"
             color="#ffc046"
-            size="40"
+            size="50"
           />
-          <text class="text-xl font-normal">ヘルプ</text>
+          <text class="text-md font-normal">ヘルプ</text>
         </fui-list-cell>
         <fui-list-cell :bottomBorder="false" arrow @click="handleClick('5')">
           <fui-icon
             class="bg-green-100 w-12 h-12 flex justify-center items-center text-center mx-3 rounded-full"
             name="setup-fill"
             color="#85d062"
-            size="40"
+            size="50"
           />
-          <text class="text-xl font-normal">ログアウト</text>
+          <text class="text-md font-normal">ログアウト</text>
         </fui-list-cell>
       </fui-list>
     </view>
