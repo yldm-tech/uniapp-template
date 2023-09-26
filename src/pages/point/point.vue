@@ -5,37 +5,37 @@ const items = [
   {
     id: 1,
     name: '/static/images/aichi.png',
-    value: 1000,
+    value: randomNum(1000, 10000),
   },
   {
     id: 2,
     name: '/static/images/fokukita.png',
-    value: 2000,
+    value: randomNum(1000, 10000),
   },
   {
     id: 3,
     name: '/static/images/hirojima.png',
-    value: 3000,
+    value: randomNum(1000, 10000),
   },
   {
     id: 4,
     name: '/static/images/honyon.png',
-    value: 4000,
+    value: randomNum(1000, 10000),
   },
   {
     id: 5,
     name: '/static/images/koube.png',
-    value: 5000,
+    value: randomNum(1000, 10000),
   },
   {
     id: 6,
     name: '/static/images/nagoya.png',
-    value: 6000,
+    value: randomNum(1000, 10000),
   },
   {
     id: 7,
     name: '/static/images/nexco.png',
-    value: 7000,
+    value: randomNum(1000, 10000),
   },
 ]
 </script>
@@ -50,9 +50,9 @@ const items = [
       <view class="px-1">
         <image class="h-10" :src="item.name" mode="heightFix" />
       </view>
-      <view class="pr-5">
+      <view class="pr-2">
         <view class="py-1 text-xs text-gray-400 font-normal">ポイント</view>
-        <view class="py-1 float-right">{{ randomNum(400, 3000) }}</view>
+        <view class="py-1 float-right">{{ item.value }}</view>
       </view>
     </view>
   </view>
