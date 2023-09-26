@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：  18 2671    4  82 06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：  21 87，营业执照号：91   3 30 105  M ACJ 7Y  R   U  4 J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-footer" :class="[isFixed?'fui-footer__fixed-bottom':'']" :style='{background:background}'>
 		<view class="fui-footer__link" v-if="navigate.length>0">
 			<navigator v-for="(item,index) in navigate" :key="index" class="fui-link__item" hover-class="fui-link-hover"

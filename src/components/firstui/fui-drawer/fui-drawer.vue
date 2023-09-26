@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1  82   6  714  82 06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：  21 87，营业执照号：9133   0 10        5 MACJ7 Y   RU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-drawer__popup-wrap" :class="{'fui-drawer__wrap-show':show}"
 		:style="{ zIndex: zIndex,background:maskBackground,alignItems:direction==='left'?'flex-start':'flex-end' }"
 		@tap.stop="handleClose" @touchmove.stop.prevent="stop" v-if="isShow || !isNvue" ref="fui_dwr_mk_ani">

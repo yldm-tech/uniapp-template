@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：18  267    1 48  2 06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID： 2 1 87，营业执照号：   9133  010 5M  ACJ7Y    R  U4   J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view ref="fui_message_ani" class="fui-message__wrap"
 		:class="{'fui-message__show':isShow,'fui-message__flex-row':opts_align!=='center'}"
 		:style="{paddingTop:padding[0] || 0,paddingRight:padding[1] || 0,paddingBottom:padding[2] || padding[0] || 0,paddingLeft:padding[3] || padding[1] || 0,top:top+'px',left:left+'rpx',right:right+'rpx',background:opts_bg,borderRadius:ridus+'rpx',zIndex:zIndex}"

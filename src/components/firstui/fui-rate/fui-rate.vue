@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：18 2 67  1 4    820 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID： 21 8 7，营业执照号：   91  3301   05M A  CJ7Y    R  U4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-rate__wrap" ref="fui_rate_wrap">
 		<view class="fui-rate__item" :class="{'fui-rate__not-allowed':disabled}" :style="{paddingRight:spacing + 'rpx'}"
 			v-for="(item,index) in stars" :key="index" @touchstart.stop="touchstart" @touchmove.stop="touchmove"

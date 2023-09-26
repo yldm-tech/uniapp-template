@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：  18267 1 4   8 20  6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：218   7，营业执照号：9    1 330  10 5    M   ACJ 7Y RU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view :style="{ height: statusBarHeight,zIndex:isFixed?zIndex:1,background:background }" class="fui-status__bar"
 		:class="{'fui-status__bar-fixed':isFixed}">
 		<slot />

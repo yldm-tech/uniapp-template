@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 1 82       671482 06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2 18  7，营业执照号： 913 3 0 1 05M    ACJ   7 Y R  U4 J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-switch__input" :style="{zoom:isNvue?1:scaleRatio,transform:`scale(${isNvue?scaleRatio:1})`}">
 		<!-- #ifdef APP-NVUE -->
 		<switch v-if="type==='switch'" @change="change" :name="name" :checked="val" :disabled="disabled"

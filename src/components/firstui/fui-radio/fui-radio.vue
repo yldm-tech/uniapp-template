@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：18 26   7148 20     6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：21   87，营业执照号：  91   3  3    01 05M A CJ7 Y  RU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-radio__input"
 		:class="{'fui-radio__disabled':disabled,'fui-radio__color':!getColor && val && !isCheckMark}"
 		:style="{backgroundColor:getBackgroundColor(val,isCheckMark),borderColor:getBorderColor(val,isCheckMark),zoom:isNvue?1:scaleRatio,transform:`scale(${isNvue?scaleRatio:1})`,borderRadius:borderRadius}"

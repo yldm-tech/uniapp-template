@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 18  2  6   71482  06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2 1  87，营业执照号： 91  3301      05 M AC J   7 YRU 4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view :style="getStyle">
 		<view class="fui-nav__bar"
 			:class="{'fui-nav__bar-line':splitLine,'fui-nva__bar-bg':!background,'fui-nav__bar-fixed':isFixed}"

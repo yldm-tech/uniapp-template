@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1826    7   14 8 2 06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2  18 7，营业执照号：  9 1    330 1   05M A CJ  7Y R U4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-copy__text-wrap">
 		<!-- #ifndef MP-ALIPAY || APP-NVUE -->
 		<text ref="fui_ct__el" :selectable="false" class="fui-copy__text" @longpress.stop="handleCopy"

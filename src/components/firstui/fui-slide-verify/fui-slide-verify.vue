@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1    8267 14  8 20  6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2  1 87，营业执照号：  9 1  330   10  5   M ACJ7YRU4   J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-slideverify__wrap" :style="{width:totalWidth+'px',height:height+'rpx',background:background}">
 		<text class="fui-sv__text-tip" :style="{fontSize:size+'rpx',background:getBackground,color:color}"
 			:class="{'fui-sv__opacity':isPass}">拖动滑块至虚线框内</text>

@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 18  26  714 8 20   6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：  2 187，营业执照号：   9  1330105MA  CJ7  YR  U   4   J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<gcanvas class="fui-poster__canvas" :ref="canvasId" :style="{ width: w + 'px', height: h + 'px'  }">
 	</gcanvas>
 </template>

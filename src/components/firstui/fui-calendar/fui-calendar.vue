@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：   18267  1 4  8 20 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID： 21  87，营业执照号：91 330     105 M  A    CJ 7YRU  4 J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-calendar__wrap" :style="{width:dateWidth,background:background}">
 		<view class="fui-calendar__header">
 			<view class="fui-calendar__icon-left" :class="['fui-calendar__pl']" @tap.stop="changeYear(-1)">

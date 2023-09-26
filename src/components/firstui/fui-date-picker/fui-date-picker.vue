@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：182        6 7 148206，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2 1  87，营业执照号： 9  1  330 1  05M     A  CJ  7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-date__picker-wrap" @touchend="stop">
 		<view class="fui-date__picker-mask" @touchmove.stop.prevent="stop" :class="{'fui-dpk__mask-show':isShow}"
 			:style="maskStyl" ref="fui_dpkm_ani" @tap.stop="maskClick"></view>

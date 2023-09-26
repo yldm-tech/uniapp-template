@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：  1 82  67 1   4 8206，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2  18 7，营业执照号：  9 133    0    10  5M  ACJ  7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view>
 		<!-- #ifdef APP-VUE || H5 -->
 		<view class="fui-movable__view" :class="{'fui-movable__cursor':direction!=='none'}" :data-direction="direction"

@@ -1,4 +1,4 @@
-// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：182   6 7 1482     06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
+// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：   2187，营业执照号： 9 133 010  5   M AC J  7Y  RU 4  J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
 import math from './math.js'
 
 function QRPolynomial(num, shift) {

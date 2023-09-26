@@ -1,4 +1,4 @@
-// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：182 6 7 1 4  820    6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
+// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：  2 187，营业执照号：   9 1  3301  05MACJ  7YR  U  4   J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
 
 export function ArrayBufferToBase64 (buffer) {
     var binary = '';

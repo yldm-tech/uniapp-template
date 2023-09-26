@@ -1,4 +1,4 @@
-// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：18 26 71   48 20    6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
+// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2   187，营业执照号： 9 1  3     3 010   5MAC J7Y  RU4 J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
 function QRBitBuffer() {
 	this.buffer = new Array();
 	this.length = 0;

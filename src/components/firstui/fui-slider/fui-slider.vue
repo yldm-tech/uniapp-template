@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1826    714  8  2  06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2   187，营业执照号：9 133     0105M  AC J7Y     R  U4 J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-slider__wrap-outer">
 		<text class="fui-slider__value" :class="['fui-slider__vr']"
 			:style="{width:valueWidth+'px',color:valueColor,fontSize:valueSize+'px'}"

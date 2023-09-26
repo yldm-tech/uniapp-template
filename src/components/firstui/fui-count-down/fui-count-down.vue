@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 18 26 7 1   4 8  206，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：   2187，营业执照号： 913 301 0    5MACJ7     YR  U   4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-count__down-wrap">
 		<text class="fui-count__down-item"
 			:style="{ background: background, borderColor: borderColor, width: getWidth(d, width) + 'rpx', height: height + 'rpx',fontSize: size + 'rpx', color: color }"

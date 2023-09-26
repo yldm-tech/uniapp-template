@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：   18 2  6  7  148206，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：  21 87，营业执照号：913  301 0    5MA  CJ7Y   RU  4   J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view @touchend="stop">
 		<view class="fui-share__sheet-mask" :style="getStyle" :class="{'fui-ss__mask-show':show}" ref="fui_ssm_ani"
 			@tap.stop="maskClick">

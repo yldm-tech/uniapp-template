@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：18 2  6714   8 2 0  6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID： 21  87，营业执照号：91  33   0105  MA   C   J 7YRU   4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-load__ani" :class="{'fui-load__ani-fixed':isFixed}"
 		:style="{background:isFixed?maskColor:'transparent'}">
 		<!-- #ifndef APP-NVUE -->

@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 18 267148 20       6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2 18  7，营业执照号： 9 13 30 1  0     5 M  ACJ  7Y RU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-tabbar__wrap" :class="{'fui-tabbar__fixed':isFixed}"
 		:style="{background:background,zIndex:zIndex}">
 		<view class="fui-tabbar__inner" :class="{'fui-tababr__border':isBorder}"

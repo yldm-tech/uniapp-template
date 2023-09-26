@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 18 26   71    48 206，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2  1 87，营业执照号：91330  10   5M  A    CJ     7Y RU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-skeleton__wrap" :style="{background:background,height:height+'px'}" ref="fui_skeleton">
 		<view class="fui-skeleton__item"
 			:class="{'fui-skeleton__dark':theme==='dark','fui-skeleton__dark-ani':active && theme==='dark','fui-skeleton__light-ani':active && theme!=='dark'}"

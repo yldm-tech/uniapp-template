@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：  18 2 6 714  82   06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：21 8  7，营业执照号：  9133   010  5  MA C  J7 Y RU4   J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view :id="elId" ref="fui_wi__el" class="fui-waterfall__item-wrap" :class="{'fui-waterfall__item-show':isShow}"
 		:style="{width:width+'px' ,background:background,borderRadius:radius+'rpx',transform:transform}"
 		@tap="handleTap">

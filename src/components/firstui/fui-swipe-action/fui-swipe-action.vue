@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：182  6  7 1 48   20 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：21   87，营业执照号：913 30105 M    ACJ7   Y    R U  4 J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<!-- #ifdef APP-VUE || MP-WEIXIN || H5 -->
 	<view class="fui-swipe__action-wrap" :style="{marginTop:marginTop+'rpx',marginBottom:marginBottom+'rpx'}">
 		<view class="fui-swipe__action-inner" :show="isShow" :change:show="handler.showChange" :threshold="thresholdVal"

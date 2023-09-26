@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1  826   71   48 20 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：21  8 7，营业执照号： 9133 0   105 M   A C J7 Y   RU4  J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<!-- #ifndef APP-VUE || MP-WEIXIN || H5  -->
 	<view class="fui-drag__wrap" ref="fui_drag" :id="elId"
 		:style="{width:wrapWidth+'px',height:(rows * cellHeight)+'px'}"

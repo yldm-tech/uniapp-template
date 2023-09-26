@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 182  6 7 1  4820   6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2   187，营业执照号：9  1 33 010     5 MAC  J 7 Y  RU 4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-swiper__wrap">
 		<slot></slot>
 		<view v-if="type==1" class="fui-swiper__dot"

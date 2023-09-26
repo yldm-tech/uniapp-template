@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1 826 7  148   2 0  6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID： 2 1 87，营业执照号：9 1  3 3 010  5 M  A   CJ7 Y RU  4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view @touchmove.stop.prevent="stop" v-if="isShow || !isNvue">
 		<view class="fui-actionsheet__mask" :class="{'fui-actionsheet__mask-show':show}" ref="fui_asm_ani"
 			@tap="handleClickMask" :style="getStyle"></view>

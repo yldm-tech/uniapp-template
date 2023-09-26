@@ -1,4 +1,4 @@
-// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：  182   6 7148 20   6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
+// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：21   87，营业执照号：9   133 0      10  5 MAC   J7YRU4 J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
 // #ifdef APP-NVUE
 //BindingX实现滑动比较流畅（已实现），缺点不好实时更新数据，暂时废弃
 // const BindingX = uni.requireNativePlugin('bindingx');

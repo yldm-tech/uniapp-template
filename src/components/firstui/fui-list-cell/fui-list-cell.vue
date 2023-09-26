@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1 8 267  148  20    6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2   187，营业执照号：  91 33  010  5 M A    CJ 7Y  RU4 J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-list__cell" :class="{'fui-highlight':highlight,'fui-list__cell-background':!background}"
 		:style="{paddingTop:getPadding[0] || 0,paddingRight:getPadding[1] || 0,paddingBottom:getPadding[2] || getPadding[0] || 0,paddingLeft:getPadding[3] || getPadding[1] || 0,background:background,marginTop:marginTop+'rpx',marginBottom:marginBottom+'rpx',borderRadius:radius}"
 		@tap="handleClick">

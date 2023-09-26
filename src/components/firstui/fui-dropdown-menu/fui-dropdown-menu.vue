@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1     826 71 4 820  6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：  2 187，营业执照号： 913 3010 5MA    CJ     7 Y  R  U4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-dropdown__menu" ref="fui_dm_wrap" @tap="resetCalc">
 		<slot></slot>
 		<view class="fui-ddm__mask" :style="{background:maskBackground}" v-if="isShow && isMask" @tap="close(1)">

@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 1 8  26 71482    0 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID： 218  7，营业执照号：  91 3   3 01 0 5M AC J7   Y RU4  J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-panel__wrap"
 		:style="{background:background,'border-top-color':borderColor,'border-bottom-color':borderColor,marginTop:marginTop+'rpx',marginBottom:marginBottom+'rpx'}"
 		:class="{'fui-panel__unlined':!isBorder,'fui-panel__background':!background}">

@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：     18  2 6  7148206，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID： 21 8 7，营业执照号： 913   3   0 1 0 5MAC J 7Y     RU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-banner__arc-wrap" ref="fui_banner__arc"
 		:style="{height:height+'rpx',marginTop:marginTop+'rpx',marginBottom:marginBottom+'rpx'}" @tap="handleClick">
 		<!-- #ifndef APP-NVUE -->

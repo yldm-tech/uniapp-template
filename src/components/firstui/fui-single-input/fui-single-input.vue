@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1  826   71482     06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID： 218  7，营业执照号：  9 13  3 01 05 MA CJ7Y R  U   4  J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-single__input-wrap" :style="{marginTop:marginTop+'rpx',marginBottom:marginBottom+'rpx'}"
 		@tap="onAliClick">
 		<view class="fui-single__input" :style="{paddingLeft:padding+'rpx',paddingRight:padding+'rpx'}"

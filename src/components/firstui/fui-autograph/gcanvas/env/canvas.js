@@ -1,4 +1,4 @@
-// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1    8 267  148  2 06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
+// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID： 2 18 7，营业执照号： 9133  0 1    05 MAC     J7 YRU4  J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
 import GContext2D from '../context-2d/RenderingContext';
 import GContextWebGL from '../context-webgl/RenderingContext';
 

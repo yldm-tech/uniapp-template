@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1 8  2   67  1 48 206，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：21  8 7，营业执照号：91  3 3 0 105   MA   CJ 7   YRU 4 J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-image__cropper" @touchmove.stop.prevent="stop">
 		<!-- #ifdef APP-VUE || MP-WEIXIN || H5 -->
 		<image @touchstart="handler.touchstart" @touchmove="handler.touchmove" @touchend="handler.touchend"

@@ -1,4 +1,4 @@
-// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 182 67   14    8 206，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
+// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：2   187，营业执照号：9 1   3  30 10     5  M ACJ 7YR U4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
 class RequestTaskStore {
 	constructor(taskList = []) {
 		this.taskStore = taskList

@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1     82 671 48 20  6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：  21 87，营业执照号： 9  1  3   30105  MACJ 7YRU      4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-sticky__wrap" :class="{'fui-sticky__fixed':!range}" :style="getStyles" :id="elId"
 		ref="fui_sticky__el">
 		<view :class="{'fui-sticky__fixed':range,'fui-sticky__fixed-mp':!range && isFixed}" :style="getStyle">

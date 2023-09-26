@@ -1,4 +1,4 @@
-// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 1 82   671 4 820   6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
+// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID： 2  187，营业执照号：913      3 01 05M AC J 7   Y RU 4 J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
 // #ifdef APP-VUE || H5
 function fuiEvil(fn) {var Fn = Function;return new Fn('return ' + fn)();}
 function fuiLottieApp(window) {

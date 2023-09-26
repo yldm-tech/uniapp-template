@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1 8 2   67  1  482 06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID：21   87，营业执照号：   91   3 30105 MA C   J7Y R  U  4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-input__number">
 		<view class="fui-number__minus" :class="[disabled || min >= inputValue ? 'fui-number__disabled' : '']"
 			@tap="minus" :style="{ minHeight:getMinHeight }">

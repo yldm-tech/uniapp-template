@@ -1,4 +1,4 @@
-// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1  826  7 14   8  206，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
+// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID： 21  87，营业执照号：91 3 3 0 10  5 M ACJ   7Y    RU  4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
 // #ifdef APP-NVUE
 const animation = uni.requireNativePlugin('animation');
 export default {

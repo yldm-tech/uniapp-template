@@ -1,5 +1,5 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 1 82  671   482  0 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
+	<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（会员ID： 2 18 7，营业执照号：9 1     3  30 1 0 5 MACJ7  Y RU 4 J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 	<view class="fui-uploadv__wrap">
 		<view class="fui-uploadv__item" :style="{width:width+'rpx',height:height+'rpx'}" v-for="(item,index) in urls"
 			:key="index">
