@@ -109,9 +109,9 @@ devDependencies:
   '@uni-helper/vite-plugin-uni-layouts':
     specifier: ^0.1.3
     version: 0.1.3
-  '@uni-helper/vite-plugin-uni-middleware':
-    specifier: ^0.0.1
-    version: 0.0.1(vue@3.3.4)
+  '@uni-helper/vite-plugin-uni-platform':
+    specifier: ^0.0.4
+    version: 0.0.4
   '@uni-helper/vite-plugin-uni-tailwind':
     specifier: ^0.12.0
     version: 0.12.0(vite@4.4.9)
@@ -4171,15 +4171,10 @@ packages:
       scule: 1.0.0
     dev: true
 
-  /@uni-helper/vite-plugin-uni-middleware@0.0.1(vue@3.3.4):
-    resolution: {integrity: sha512-+fda9qTeIL3vrtRYOrAZanpoGXpb9l/1eP68eyyutcbk6hPlIhVsjIpDlHYPC/9zZRT56tTSaLB7wqM5EBgRXA==}
-    peerDependencies:
-      vue: '>=3.0.0'
+  /@uni-helper/vite-plugin-uni-platform@0.0.4:
+    resolution: {integrity: sha512-aQnhpiLpxlxr6C2i6FsEbY6aFJH1igZUC5DsqoDscD/dBnpCPnovW9bFL/ig8qHsq87iAnqwhZtEpsLrzgrDaw==}
     dependencies:
-      fast-glob: 3.3.1
-      jsonc-parser: 3.2.0
-      scule: 1.0.0
-      vue: 3.3.4
+      '@uni-helper/uni-env': 0.0.3
     dev: true
 
   /@uni-helper/vite-plugin-uni-tailwind@0.12.0(vite@4.4.9):

@@ -7,6 +7,15 @@ declare module '*.vue' {
   export default component
 }
 
+interface ImportMetaEnv {
+  readonly VITE_APP_BASE_API: string
+  readonly VITE_APP_STATIC_API: string
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}
+
 /**
  * declare module '@vue/runtime-core'
  *   现调整为
