@@ -28,20 +28,41 @@ const handleClick = (type: string) => {
 
 <template>
   <view class="my">
-    <!-- header -->
-    <view class="header pt-20 pb-5 flex items-center">
-      <view>
-        <fui-avatar class="mx-5" width="200" src="/static/images/user_default.png"></fui-avatar>
-      </view>
-      <view class="mx-8">
-        <view class="text-md text-black">
-          <text class="mr-1">涼風</text>
+    <!-- header-profile -->
+    <navigator
+      v-if="false"
+      url="/pages/my/account"
+      open-type="navigate"
+      hover-class="navigator-hover"
+    >
+      <view class="header pt-20 pb-5 flex items-center">
+        <view>
+          <fui-avatar class="mx-5" width="200" src="/static/images/user_default.png"></fui-avatar>
         </view>
-        <view class="text-md py-1 text-gray-300">
-          <text>ID:5123195</text>
+        <view class="mx-8">
+          <view class="text-md text-black">
+            <text class="mr-1">涼風</text>
+          </view>
+          <view class="text-md py-1 text-gray-300">
+            <text>ID:5123195</text>
+          </view>
         </view>
       </view>
-    </view>
+    </navigator>
+
+    <navigator url="/pages/my/login" open-type="navigate" hover-class="navigator-hover">
+      <view class="header pt-20 pb-5 flex items-center">
+        <view>
+          <fui-avatar class="mx-5" width="200" src="/static/images/user-default.jpg"></fui-avatar>
+        </view>
+        <view class="mx-8">
+          <view class="text-md text-black">
+            <text class="mr-1">ログイン</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+
     <!-- items -->
     <view class="mr-5">
       <fui-list :bottomBorder="false" :topBorder="false">

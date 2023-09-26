@@ -41,7 +41,7 @@ const items = [
 </script>
 
 <template>
-  <view class="bg-gray-100">
+  <view class="pt-5">
     <view
       class="flex justify-between rounded-3 bg-white m-2 p-3"
       v-for="(item, index) in items"
@@ -57,3 +57,9 @@ const items = [
     </view>
   </view>
 </template>
+
+<style lang="scss" scoped>
+page {
+  background-color: #f5f5f5;
+}
+</style>

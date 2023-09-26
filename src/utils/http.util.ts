@@ -46,7 +46,7 @@ const http = <T>(options: UniApp.RequestOptions) => {
         } else if (res.statusCode === 401) {
           memberStore.clearProfile()
           uni.navigateTo({
-            url: '/pages/login/login',
+            url: '/pages/my/login',
           })
           reject(res)
         } else {
