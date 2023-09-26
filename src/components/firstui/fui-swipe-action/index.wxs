@@ -1,4 +1,4 @@
-// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 1 8 26 7 14   8 2 06，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
+// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 182   671  4 820   6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
 var MIN_DISTANCE = 10
 
 function isPC() {
@@ -107,17 +107,17 @@ function touchmove(e, ownerInstance) {
 	var ins = e.instance;
 	var state = ins.getState()
 	if (state.disabled) return;
-	// 是否可以滑动页面// 2021-5-6变更
+	// 是否可以滑动页面
 	stopTouchMove(e);
 	if (state.direction !== 'horizontal') return;
 
 	if (e.preventDefault) {
-		// 阻止页面滚动// 新特性待增加
+		// 阻止页面滚动
 		e.preventDefault()
 	}
 
 	move(state.x + state.deltaX, ins, ownerInstance)
-}// 功能需要优化
+}
 
 function openState(type, ins, ownerInstance) {
 	var state = ins.getState()
@@ -201,7 +201,7 @@ function mousedown(e, ins) {
 	if (!isH5 || !isPC()) return
 	touchstart(e, ins)
 	movable = true
-}// todo: 待修改
+}
 
 function mousemove(e, ins) {
 	if (!isH5 || !isPC() || !movable) return
@@ -213,7 +213,7 @@ function mouseup(e, ins) {
 	touchend(e, ins)
 	movable = false
 }
-// 2021-5-6变更
+
 function mouseleave(e, ins) {
 	if (!isH5 || !isPC()) return
 	movable = false

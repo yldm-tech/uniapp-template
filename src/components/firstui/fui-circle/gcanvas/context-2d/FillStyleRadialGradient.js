@@ -1,4 +1,4 @@
-// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：18  2671 4 82  0    6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
+// 本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：1   8  26714 8 2  0 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。
 class FillStyleRadialGradient {
     constructor(x0, y0, r0, x1, y1, r1) {
         this._start_pos = { _x: x0, _y: y0, _r: r0 };

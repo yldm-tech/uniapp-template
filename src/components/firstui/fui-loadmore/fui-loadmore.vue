@@ -1,4 +1,4 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：18 2 6 7  1 48  20  6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
+<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号： 1  82   6 71482  0 6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
 	<view class="fui-loadmore__wrap" :class="['fui-loadmore__'+direction]" :style="{height:height+'rpx'}">
 		<view class="fui-loadmore__icon" ref="fui_loadmore"
