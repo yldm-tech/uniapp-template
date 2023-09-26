@@ -1,4 +1,4 @@
-<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：18 267 1 4   8  20  6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
+<!--本文件由FirstUI授权予杭州悦灵筑梦科技有限公司（手机号：18 2 67 148 2    0  6，身份证尾号：7YRU4J）专用，请尊重知识产权，勿私下传播，违者追究法律责任。-->
 <template>
 	<text
 		:class="[dot?'fui-badge__dot':'fui-badge__wrap',background?'':('fui-badge__bg-'+type),absolute?'fui-badge__absolute':'',scaleRatio!=1 && isNvue?'fui-badge__trans-origin':'',!background && type==='white'?'fui-badge__text-color':'']"
